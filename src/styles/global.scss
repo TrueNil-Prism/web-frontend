@@ -1,0 +1,62 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "partials/reset";
+@import "partials/typography";
+@import "partials/fonts";
+@import "form";
+
+.error {
+  color: $error;
+}
+
+.verify-user-container {
+  @include flex-center;
+  min-height: 100vh;
+  background: url("../assets/images/hero-bg.png") top center no-repeat;
+  background-size: cover;
+}
+
+.logo-text {
+  font-size: 28px;
+  color: $primary-text;
+  font-family: $nunito--bold;
+  margin: 0 0 0 8px;
+}
+
+.main-layout {
+  padding-top: 80px;
+  margin-left: 0px;
+  width: 100%;
+  background: $secondary-bg;
+  min-height: 100%;
+
+  @include media-breakpoint-up(lg) {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+  }
+}
+
+.form-control {
+  color: $secondary-text;
+  border: 1px solid var(--bs-gray-400);
+  border-radius: 3px;
+  min-height: 40px;
+  &:focus {
+    opacity: 0.9;
+    box-shadow: 0 10px 10px 0 $secondary-bg !important;
+    border-color: inherit;
+  }
+
+  &:read-only {
+    background: var(--bs-gray-100);
+    box-shadow: none;
+    border-color: var(--bs-gray-400);
+  }
+}
+
+.common {
+  &-card {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    margin-top: 16px;
+  }
+}
