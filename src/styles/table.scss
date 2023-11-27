@@ -1,0 +1,30 @@
+.table {
+  &-head {
+    font-family: $nunito--bold !important;
+    background: var(--bs-light);
+  }
+
+  &-body {
+    font-family: $nunito !important;
+  }
+
+  &-edit-action {
+    color: $primary-bg;
+  }
+
+  &-min-145 {
+    min-width: 145px;
+  }
+
+  &-min-117 {
+    min-width: 117px;
+  }
+
+  &-min-125 {
+    min-width: 125px;
+  }
+
+  &-max-250 {
+    max-width: 250px;
+  }
+}

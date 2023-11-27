@@ -1,0 +1,25 @@
+.modal {
+  &-title {
+    border-bottom: 1px solid var(--bs-gray-400);
+  }
+
+  &-title-text {
+    font-family: $nunito--semi;
+    font-size: 20px;
+  }
+
+  &-close {
+    position: absolute;
+    right: 1px;
+    padding: 10px;
+    top: 1px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  &-main {
+    @include media-breakpoint-down(lg) {
+      min-width: 300px !important;
+    }
+  }
+}
